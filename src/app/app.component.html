@@ -1,0 +1,30 @@
+<div style="display: flex;">
+  <div style="margin-right: 20px;">
+  <h2>All Players</h2>
+  <div *ngFor="let items of playerList">
+  <h5>{{items}}</h5>
+  </div>
+</div>
+<div style="margin-right: 20px;">
+  <h2>Quarter Final</h2>
+  <div *ngFor="let item of QFNL">
+    <h5>{{item}}</h5>
+    </div>
+  </div>
+  <div style="margin-right: 20px;">
+    <h2>Semi Final</h2>
+    <div *ngFor="let item of SFNL">
+      <h5>{{item}}</h5>
+      </div>
+    </div>
+    <div style="margin-right: 20px;">
+    <h2>Final</h2>
+      <div *ngFor="let item of FNL">
+        <h5>{{item}}</h5>
+        </div>
+      </div>
+      <div>
+    <h2>Winner</h2>
+<h5>{{finalWinner}}</h5>
+</div>
+</div>
